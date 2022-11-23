@@ -1,0 +1,141 @@
+.footer__content {
+   display: flex;
+   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+   .footer__content {
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+}
+
+.about-company div:nth-child(1) {
+   flex: 1;
+}
+
+.about-company__title, 
+.menu-footer__title,
+.contacts-footer__title {
+   font-weight: 700;
+   font-size: 14px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   color: var(--darkGray);
+   padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+   .about-company__title, 
+   .menu-footer__title,
+   .contacts-footer__title {
+      padding-top: 20px;
+      font-size: 12px;
+   }
+}
+
+.about-company__item {
+   padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+   .about-company__item,
+   .menu-footer__item,
+   .contacts-footer__item {
+      font-size: 14px;
+   }
+}
+
+.menu-footer div:nth-child(2) {
+   flex: 2;
+}
+
+.menu-footer__list {
+   height: 155px;
+   width: 410px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+   .menu-footer__list {
+      height: 175px;
+      max-width: 410px;
+   }
+}
+
+.menu-footer__item {
+   width: 52%;
+   padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+   .menu-footer__item {
+      width: 40%;
+      padding-right: 40px;
+   }
+}
+
+.contacts-footer div:nth-child(3) {
+   flex: 1;
+}
+
+.contacts-footer__body {
+   text-align: right;
+}
+
+@media (max-width: 768px) {
+   .contacts-footer__body {
+      text-align: left;
+   }
+}
+
+.contacts-footer__item {
+   padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+   .contacts-footer__item {
+      padding-bottom: 10px;
+   }
+}
+
+.icons {
+   display: flex;
+   justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+   .icons {
+      justify-content: flex-start;
+   }
+}
+
+.icons__list {
+   display: flex;
+}
+
+.icon__item:not(:last-child) {
+   padding-right: 10px;
+}
+
+.icon__link img {
+   width: 20px;
+   height: 20px;
+}
+
+.contacts-footer__privacy-policy {
+   margin-top: 70px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+   .contacts-footer__privacy-policy {
+      margin-top: 40px;
+   }
+}

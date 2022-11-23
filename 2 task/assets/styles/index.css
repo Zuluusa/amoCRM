@@ -1,0 +1,85 @@
+@import url('./reset.css');
+@import url('./fonts.css');
+@import url('./variables.css');
+@import url('./blocks/header.css');
+@import url('./blocks/main.css');
+@import url('./blocks/footer.css');
+
+html, body {
+   height: 100%;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.2;
+   color: var(--lightText);
+   background-color: var(--mainColor);
+}
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.header {
+   margin-top: 46px;
+   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+   .header {
+      margin-top: 0;
+   }
+}
+
+.main {
+   padding-top: 90px;
+   flex: 1 1 auto;
+   padding-bottom: 69px;
+}
+
+@media (max-width: 768px) {
+   .main {
+      padding-top: 40px;
+      padding-bottom: 60px;
+   }
+}
+
+.footer {
+   padding-top: 55px;
+   padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+   .footer {
+      padding-top: 40px;
+   }
+}
+
+/* Utility */
+.none {
+   display: none !important;
+}
+
+.visually-hidden {
+   position: absolute;
+   opacity: 0;
+   visibility: hidden;
+   width: 0px;
+   height: 0px;
+   display: block;
+   margin-left: -10000px;
+   background: transparent;
+   font-size: 0;
+}
+
+/* Grid */
+.container {
+   max-width: var(--maxWidthContainer);
+   min-width: var(--minWidthContainer);
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
